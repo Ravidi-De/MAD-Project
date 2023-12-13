@@ -1,0 +1,32 @@
+<resources>
+    <string name="app_name">Newz</string>
+    <string name="action_settings">Settings</string>
+    <!-- Strings used for fragments for navigation -->
+    <string name="post_list_fragment_label">All Newz</string>
+    <string name="add_post_fragment_label">Add a Post</string>
+    <string name="view_post_fragment_label">View Post</string>
+    <string name="update_post_fragment_label">Update Post</string>
+    <string name="next">Next</string>
+    <string name="previous">Previous</string>
+    <!-- common -->
+    <string name="copyright">
+        &#169;2023 Newz
+    </string>
+    <!-- post list view -->
+    <string name="main_image_content_desc">Newz Logo</string>
+    <string name="main_fab_content_desc">Create a Post</string>
+    <string name="main_post_list_empty_text">There are no Newz Posts</string>
+    <!-- add post view -->
+    <string name="add_post_edit_title">Newz Post Title</string>
+    <string name="add_post_edit_content">Newz Post Content</string>
+    <string name="add_post_save_fab_content_desc">Save Post</string>
+    <string name="add_post_cancel_fab_content_desc">Cancel</string>
+    <!-- view post view -->
+    <string name="view_post_title">Newz Post Title</string>
+    <string name="view_post_content">Newz Post Content</string>
+    <string name="view_post_delete_fab_content_desc">Delete</string>
+    <string name="view_post_edit_fab_content_desc">Edit</string>
+    <string name="view_post_image_content_desc">Newz Post Thumbnail</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>

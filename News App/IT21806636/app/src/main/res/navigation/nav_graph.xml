@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/PostListFragment">
+
+    <fragment
+        android:id="@+id/PostListFragment"
+        android:name="com.app.newz.ui.PostListFragment"
+        android:label="@string/post_list_fragment_label"
+        tools:layout="@layout/fragment_post_list" >
+
+        <action
+            android:id="@+id/action_PostListFragment_to_AddPostFragment"
+            app:destination="@id/AddPostFragment" />
+
+        <action
+            android:id="@+id/action_PostListFragment_to_ViewPostFragment"
+            app:destination="@id/ViewPostFragment" />
+
+        <argument
+            android:name="errorMessage"
+            app:argType="string" />
+
+        <argument
+            android:name="successMessage"
+            app:argType="string" />
+
+    </fragment>
+    <fragment
+        android:id="@+id/AddPostFragment"
+        android:name="com.app.newz.ui.AddPostFragment"
+        android:label="@string/add_post_fragment_label"
+        tools:layout="@layout/fragment_add_post" >
+
+        <action
+            android:id="@+id/action_AddPostFragment_to_PostListFragment"
+            app:destination="@id/PostListFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/ViewPostFragment"
+        android:name="com.app.newz.ui.ViewPostFragment"
+        android:label="@string/view_post_fragment_label"
+        tools:layout="@layout/fragment_view_post" >
+
+        <argument
+            android:name="postId"
+            app:argType="integer" />
+
+        <argument
+            android:name="errorMessage"
+            app:argType="string" />
+
+        <argument
+            android:name="successMessage"
+            app:argType="string" />
+
+        <action
+            android:id="@+id/action_ViewPostFragment_to_PostListFragment"
+            app:destination="@id/PostListFragment" />
+
+        <action
+            android:id="@+id/action_ViewPostFragment_to_UpdatePostFragment"
+            app:destination="@id/UpdatePostFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/UpdatePostFragment"
+        android:name="com.app.newz.ui.UpdatePostFragment"
+        android:label="@string/update_post_fragment_label"
+        tools:layout="@layout/fragment_update_post" >
+
+        <argument
+            android:name="postId"
+            app:argType="integer" />
+
+        <action
+            android:id="@+id/action_UpdatePostFragment_to_ViewPostFragment"
+            app:destination="@id/ViewPostFragment" />
+
+        <action
+            android:id="@+id/action_UpdatePostFragment_to_PostListFragment"
+            app:destination="@id/PostListFragment" />
+    </fragment>
+</navigation>
